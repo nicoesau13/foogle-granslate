@@ -107,7 +107,7 @@ const translations = {
     },
     'please': {
         'es': 'por favor',
-        'fr': 's\'il vous plaît',
+        'fr': "s'il vous plaît",
         'de': 'bitte',
         'it': 'per favore',
         'pt': 'por favor',
