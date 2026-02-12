@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foogle Granslate - Free Translation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">Foogle Granslate</h1>
+            <p class="tagline">Translate text between languages</p>
+        </header>
+
+        <div class="translator-box">
+            <div class="language-selector">
+                <div class="language-option">
+                    <select id="source-lang" class="lang-select">
+                        <option value="auto">Detect Language</option>
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="zh">Chinese</option>
+                        <option value="ar">Arabic</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                </div>
+                
+                <button id="swap-btn" class="swap-btn" title="Swap languages">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 16V4M7 4L3 8M7 4L11 8"></path>
+                        <path d="M17 8V20M17 20L21 16M17 20L13 16"></path>
+                    </svg>
+                </button>
+
+                <div class="language-option">
+                    <select id="target-lang" class="lang-select">
+                        <option value="en">English</option>
+                        <option value="es" selected>Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="zh">Chinese</option>
+                        <option value="ar">Arabic</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="text-boxes">
+                <div class="text-box">
+                    <textarea 
+                        id="source-text" 
+                        class="text-input" 
+                        placeholder="Enter text to translate..."
+                        maxlength="5000"
+                    ></textarea>
+                    <div class="text-info">
+                        <span id="char-count">0 / 5000</span>
+                        <button id="clear-btn" class="clear-btn">Clear</button>
+                    </div>
+                </div>
+
+                <div class="text-box">
+                    <textarea 
+                        id="target-text" 
+                        class="text-input" 
+                        placeholder="Translation will appear here..."
+                        readonly
+                    ></textarea>
+                    <div class="text-info">
+                        <button id="copy-btn" class="copy-btn">Copy</button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="translate-btn" class="translate-btn">Translate</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Foogle Granslate - A fun translation tool</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
